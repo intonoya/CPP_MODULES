@@ -5,13 +5,6 @@ int main(int argc, char **argv)
     Harl harlik;
     std::string str;
 
-    // if (argc == 1)
-    // {
-    //     harlik.complain("debug");
-    //     harlik.complain("info");
-    //     harlik.complain("warning");
-    //     harlik.complain("error");
-    // }
     if (argc == 2)
     {
         str = argv[1];

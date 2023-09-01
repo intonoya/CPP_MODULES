@@ -40,7 +40,7 @@ int main(int argc, char **argv)
     str1 = argv[2];
     str2 = argv[3];
     infile.open(file);
-    if (!infile)  //infile.peek() == std::ifstream::traits_type::eof() - for an empty file
+    if (!infile || infile.peek() == std::ifstream::traits_type::eof())
     {
         std::cout << "\x1b[31mError: Invalid file!\x1b[31m" << std::endl;
         return (1);
