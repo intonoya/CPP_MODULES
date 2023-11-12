@@ -1,0 +1,37 @@
+Short information about the cpp_module_07
+
+Templates:
+
+Rather than writing and maintaining multiple codes, we can use templates. 
+It passes the data type as a parameter so that we don’t need to write the 
+same code for different data types. 
+
+We can specify default arguments to templates.
+
+We can pass non-type arguments to templates. Non-type parameters are mainly used for 
+specifying max or min values or any other constant value for a particular instance of a 
+template. The important thing to note about non-type parameters is, that they must be 
+const. The compiler must know the value of non-type parameters at compile time. Because 
+the compiler needs to create functions/classes for a specified non-type value at compile 
+time.
+
+Template Argument Deduction:
+Template argument deduction automatically deduces the data type of the argument passed to 
+the class or function templates. This allows us to instantiate the template without 
+explicitly specifying the data type.
+
+Function Template Arguments Deduction:
+Function template argument deduction has been part of C++ since the C++98 standard. We can 
+skip declaring the type of arguments we want to pass to the function template and the 
+compiler will automatically deduce the type using the arguments we passed in the function 
+call.
+
+Class Templates:
+Class templates like function templates, class templates are useful when a class defines 
+something that is independent of the data type. Can be useful for classes like LinkedList, 
+BinaryTree, Stack, Queue, Array, etc. 
+
+So what is the difference between function overloading and templates? 
+Both function overloading and templates are examples of polymorphism features of OOP. 
+Function overloading is used when multiple functions do quite similar (not identical) 
+operations, templates are used when multiple functions do identical operations.
