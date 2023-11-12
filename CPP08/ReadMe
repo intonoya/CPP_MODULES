@@ -1,0 +1,73 @@
+Short information about the cpp_module_08
+
+STL:
+
+The Standard Template Library (STL) is a set of C++ template classes to provide common 
+programming data structures and functions such as lists, stacks, arrays, etc. It is a 
+library of container classes, algorithms, and iterators. STL is a collection of 
+algorithms, data structures, and other components that can be used to simplify the 
+development of C++ programs.
+
+Containers:
+
+A container is a holder for a collection of other objects (its elements). It isimplemented 
+as a class template, which allows great flexibility in the types supported as elements. 
+The container manages the storage space for its elements and provides member functions to 
+access them, either directly or through iterators (reference objects with similar 
+properties to pointers). 
+
+Some commonly used containers in the STL include:
+
+1. std::vector: A dynamic array that can grow or shrink in size,
+2. std::list: A doubly-linked list,
+3. std::set: An ordered set of unique elements,
+4. std::map: An ordered key-value associative container,
+5. std::queue and std::priority_queue: Queues used for first-in-first-out (FIFO) and 
+priority-based data management, respectively,
+6. std::stack: A stack data structure for last-in-first-out (LIFO) operations,
+And many more.
+
+You can declare and use these containers with different data types by specifying the 
+template parameter.
+
+Iterators:
+
+Iterators are used to point at the memory addresses of STL containers. They are primarily 
+used in sequences of numbers, characters etc. They provide a way to access and manipulate 
+the elements within the container without having to know its underlying data structure.
+
+Commonly used iterators are:
+
+1. begin(): Returns an iterator pointing to the first element.
+2. end(): Returns an iterator pointing one past the last element.
+3. rbegin(): Returns a reverse iterator pointing to the last element.
+4. rend(): Returns a reverse iterator pointing one before the first element.
+5. next(): Returns the new iterator that the iterator would point after advancing the 
+positions mentioned in its arguments.
+6. prev(): Returns the new iterator that the iterator would point after decrementing the 
+positions mentioned in its arguments.
+7. inserter(): Is used to insert the elements at any position in the 
+container. It accepts 2 arguments, the container and iterator to position where the 
+elements have to be inserted.
+
+Algorithms:
+
+Algorithms are components that perform algorithmic operations on containers and other 
+sequences. C++ STL provides a wide range of algorithms which are implemented as template 
+functions and can be used with various container types. 
+
+Some commonly used algorithms are:
+
+1.a) sort(first_iterator, last_iterator): sorts the given vector,
+1.b) sort(first_iterator, last_iterator, greater<int>()): sorts the given 
+container/vector in descending order,
+2. find: searches for a specific element in a container,
+3. for_each: applies a function to each element in a container,
+4. transform: applies a function to each element and stores the results in 
+another container,
+5. accumulate: computes the sum or product of a range of elements,
+6. reverse: to reverse a vector
+(if ascending -> descending  OR  if descending -> ascending),
+7. *max_element: to find the maximum element of a vector,
+8. *min_element: to find the minimum element of a vector,
+9. accumulate: does the summation of vector elements.
